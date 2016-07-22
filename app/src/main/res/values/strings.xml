@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TestApp</string>
+    <integer name="column_count">2</integer>
+</resources>

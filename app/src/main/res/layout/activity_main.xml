@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <GridView
+        android:layout_weight="1"
+        android:id="@+id/gridView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="100dp"
+        android:gravity="center"
+        android:horizontalSpacing="@dimen/margin"
+        android:numColumns="@integer/column_count"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/margin"
+        android:layout_margin="@dimen/margin">
+    </GridView>
+    <LinearLayout
+        android:id="@+id/page_changer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/previous_page"
+            android:background="@drawable/ic_previous_page"
+            android:onClick="onClickPreviousPage"/>
+
+        <TextView
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:id="@+id/page_number"/>
+
+        <Button
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/next_page"
+            android:background="@drawable/ic_next_page"
+            android:onClick="onClickNextPage"/>
+
+    </LinearLayout>
+</LinearLayout>
