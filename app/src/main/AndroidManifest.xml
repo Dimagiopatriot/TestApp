@@ -19,8 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.FullImageActivity"
-            android:screenOrientation="portrait"></activity>
+        <activity android:name=".view.FullImageActivity"></activity>
     </application>
 
 </manifest>
